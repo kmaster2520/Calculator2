@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbk-d3-hKz">
+                                <rect key="frame" x="0.0" y="79" width="320" height="90"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="42"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXR-FW-Kss">
+                                <rect key="frame" x="0.0" y="488" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GXR-FW-Kss" secondAttribute="height" multiplier="1:1" id="KqQ-kS-hmk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="clr">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N5F-7m-cv3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWo-Sb-5Om">
+                                <rect key="frame" x="240" y="488" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="equalsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5D-4v-mM8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQd-ZP-fXm">
+                                <rect key="frame" x="240" y="408" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="/">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctc-Fc-4Aa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i08-kW-jhb">
+                                <rect key="frame" x="0.0" y="408" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tuu-h1-3Nm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rv6-Qm-Y9l">
+                                <rect key="frame" x="160" y="408" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSK-ev-Wyg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybK-AJ-mU5">
+                                <rect key="frame" x="240" y="328" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="*">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F0X-IS-ccc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nU-ZH-Thm">
+                                <rect key="frame" x="80" y="408" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ON2-kZ-w5e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPm-oX-yrg">
+                                <rect key="frame" x="0.0" y="328" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNg-JH-IqD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eB8-Rz-61S">
+                                <rect key="frame" x="160" y="328" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIa-kO-J4s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-Z6-siQ">
+                                <rect key="frame" x="240" y="248" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KgN-yd-8ex"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hf-88-ane">
+                                <rect key="frame" x="0.0" y="248" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwx-oM-7zw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-jA-HCN">
+                                <rect key="frame" x="160" y="248" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vBU-W2-6lI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3H-ue-01m">
+                                <rect key="frame" x="80" y="248" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3XE-nU-kfq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQX-9K-khK">
+                                <rect key="frame" x="240" y="168" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMs-LH-qpK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G22-nV-7nb">
+                                <rect key="frame" x="80" y="168" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title=")">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXM-RQ-Thc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r71-e4-gVz">
+                                <rect key="frame" x="0.0" y="168" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="(">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCr-L3-XPe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FX-VJ-rvY">
+                                <rect key="frame" x="160" y="488" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dvH-jv-Dkc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O16-ZA-dXl">
+                                <rect key="frame" x="80" y="488" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="del">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="delButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eGi-b2-yj9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dP-lS-EyF">
+                                <rect key="frame" x="80" y="328" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5VI-ab-5jl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtP-ea-oiN">
+                                <rect key="frame" x="160" y="168" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                <state key="normal" title="^">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQx-9K-8Aa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Hf-88-ane" firstAttribute="top" secondItem="r71-e4-gVz" secondAttribute="bottom" id="0g6-ID-iJT"/>
+                            <constraint firstItem="BQd-ZP-fXm" firstAttribute="leading" secondItem="rv6-Qm-Y9l" secondAttribute="trailing" id="1DN-ZQ-hCI"/>
+                            <constraint firstItem="Sgy-Z6-siQ" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="1Nr-PZ-8XE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O16-ZA-dXl" secondAttribute="bottom" id="2pE-Sx-Z4h"/>
+                            <constraint firstItem="2Hf-88-ane" firstAttribute="top" secondItem="r71-e4-gVz" secondAttribute="bottom" id="2wa-mk-nVN"/>
+                            <constraint firstItem="r71-e4-gVz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4Xv-yL-tNv"/>
+                            <constraint firstItem="O16-ZA-dXl" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="5Uj-z4-AJl"/>
+                            <constraint firstItem="UtP-ea-oiN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="148" id="5ap-bQ-eQn"/>
+                            <constraint firstItem="Nax-jA-HCN" firstAttribute="leading" secondItem="m3H-ue-01m" secondAttribute="trailing" id="5hW-OZ-Rjq"/>
+                            <constraint firstItem="BQd-ZP-fXm" firstAttribute="top" secondItem="ybK-AJ-mU5" secondAttribute="bottom" id="7fK-Tp-qY8"/>
+                            <constraint firstItem="Sgy-Z6-siQ" firstAttribute="leading" secondItem="Nax-jA-HCN" secondAttribute="trailing" id="7mh-Qb-nr1"/>
+                            <constraint firstItem="UtP-ea-oiN" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="7u0-Eo-Lmh"/>
+                            <constraint firstItem="G22-nV-7nb" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="B1c-EK-l7c"/>
+                            <constraint firstItem="Nax-jA-HCN" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="CYL-H2-XyJ"/>
+                            <constraint firstItem="gQX-9K-khK" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="D8x-ZP-fF1"/>
+                            <constraint firstItem="6dP-lS-EyF" firstAttribute="leading" secondItem="OPm-oX-yrg" secondAttribute="trailing" id="DPC-Mu-r5S"/>
+                            <constraint firstItem="eB8-Rz-61S" firstAttribute="leading" secondItem="6dP-lS-EyF" secondAttribute="trailing" id="DXa-dn-Wpi"/>
+                            <constraint firstItem="i08-kW-jhb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EFu-uh-cid"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GXR-FW-Kss" secondAttribute="bottom" id="ESF-gS-LnU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GXR-FW-Kss" secondAttribute="bottom" id="Esm-9r-BRb"/>
+                            <constraint firstItem="i08-kW-jhb" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="G10-m1-sdG"/>
+                            <constraint firstItem="ybK-AJ-mU5" firstAttribute="leading" secondItem="eB8-Rz-61S" secondAttribute="trailing" id="GWh-0N-iRe"/>
+                            <constraint firstItem="Sgy-Z6-siQ" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="HWe-AM-zBY"/>
+                            <constraint firstItem="6dP-lS-EyF" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="HeZ-fN-1A8"/>
+                            <constraint firstItem="eB8-Rz-61S" firstAttribute="top" secondItem="Nax-jA-HCN" secondAttribute="bottom" id="ILr-zJ-KUD"/>
+                            <constraint firstAttribute="trailing" secondItem="BQd-ZP-fXm" secondAttribute="trailing" id="IRH-Ia-LK0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lWo-Sb-5Om" secondAttribute="bottom" id="IST-sC-yz1"/>
+                            <constraint firstItem="5nU-ZH-Thm" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="JGS-Rn-rIv"/>
+                            <constraint firstAttribute="trailing" secondItem="Sgy-Z6-siQ" secondAttribute="trailing" id="JIg-N9-Wte"/>
+                            <constraint firstItem="rv6-Qm-Y9l" firstAttribute="top" secondItem="eB8-Rz-61S" secondAttribute="bottom" id="JfC-5K-RfQ"/>
+                            <constraint firstItem="r71-e4-gVz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="148" id="Jsn-eb-T22"/>
+                            <constraint firstItem="i08-kW-jhb" firstAttribute="top" secondItem="OPm-oX-yrg" secondAttribute="bottom" id="KDc-Bf-vpx"/>
+                            <constraint firstItem="ybK-AJ-mU5" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="LPa-1s-Avn"/>
+                            <constraint firstItem="Nax-jA-HCN" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="LiQ-JC-7K4"/>
+                            <constraint firstItem="5nU-ZH-Thm" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="MJI-Bt-gFP"/>
+                            <constraint firstItem="GXR-FW-Kss" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="NLv-Mn-xe7"/>
+                            <constraint firstItem="Nax-jA-HCN" firstAttribute="top" secondItem="UtP-ea-oiN" secondAttribute="bottom" id="OZa-ye-p3q"/>
+                            <constraint firstItem="6dP-lS-EyF" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="P6B-dY-lkU"/>
+                            <constraint firstItem="ybK-AJ-mU5" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="PdZ-Re-dfF"/>
+                            <constraint firstItem="2Hf-88-ane" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QZc-f3-kYC"/>
+                            <constraint firstItem="G22-nV-7nb" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="T1V-sc-1Uf"/>
+                            <constraint firstItem="GXR-FW-Kss" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="UbQ-uQ-Zxn"/>
+                            <constraint firstItem="G22-nV-7nb" firstAttribute="leading" secondItem="r71-e4-gVz" secondAttribute="trailing" id="WE8-cO-jWj"/>
+                            <constraint firstItem="7FX-VJ-rvY" firstAttribute="leading" secondItem="O16-ZA-dXl" secondAttribute="trailing" id="WNJ-lg-cfv"/>
+                            <constraint firstItem="r71-e4-gVz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="148" id="WXa-Ur-1Vk"/>
+                            <constraint firstItem="m3H-ue-01m" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="Wq9-Q0-DE4"/>
+                            <constraint firstItem="lWo-Sb-5Om" firstAttribute="leading" secondItem="7FX-VJ-rvY" secondAttribute="trailing" id="XQY-Fe-9ew"/>
+                            <constraint firstItem="m3H-ue-01m" firstAttribute="leading" secondItem="2Hf-88-ane" secondAttribute="trailing" id="Y8B-fv-b4y"/>
+                            <constraint firstItem="lWo-Sb-5Om" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="Yfs-yB-WK1"/>
+                            <constraint firstItem="GXR-FW-Kss" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZMR-Iv-pNc"/>
+                            <constraint firstItem="eB8-Rz-61S" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="ZNw-xU-dCy"/>
+                            <constraint firstItem="eB8-Rz-61S" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="aAX-zx-0vm"/>
+                            <constraint firstItem="5nU-ZH-Thm" firstAttribute="top" secondItem="6dP-lS-EyF" secondAttribute="bottom" id="aWt-e2-Q5y"/>
+                            <constraint firstItem="UtP-ea-oiN" firstAttribute="leading" secondItem="G22-nV-7nb" secondAttribute="trailing" id="aYd-gN-v6a"/>
+                            <constraint firstAttribute="trailing" secondItem="gQX-9K-khK" secondAttribute="trailing" id="alU-pK-DrN"/>
+                            <constraint firstItem="7FX-VJ-rvY" firstAttribute="top" secondItem="rv6-Qm-Y9l" secondAttribute="bottom" id="b4K-CX-lUd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7FX-VJ-rvY" secondAttribute="bottom" id="bGd-l8-TXg"/>
+                            <constraint firstItem="OPm-oX-yrg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="brL-xY-HW1"/>
+                            <constraint firstItem="BQd-ZP-fXm" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="cAq-02-nGp"/>
+                            <constraint firstItem="GXR-FW-Kss" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="cbQ-Zk-r6o"/>
+                            <constraint firstAttribute="trailing" secondItem="ybK-AJ-mU5" secondAttribute="trailing" id="cgY-7C-JIv"/>
+                            <constraint firstItem="5nU-ZH-Thm" firstAttribute="leading" secondItem="i08-kW-jhb" secondAttribute="trailing" id="d4O-wY-iWV"/>
+                            <constraint firstItem="UtP-ea-oiN" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="d6l-3L-cOs"/>
+                            <constraint firstItem="gQX-9K-khK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="148" id="dFd-Ip-tb2"/>
+                            <constraint firstItem="GXR-FW-Kss" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e2P-7X-e0X"/>
+                            <constraint firstItem="O16-ZA-dXl" firstAttribute="top" secondItem="5nU-ZH-Thm" secondAttribute="bottom" id="fB6-Qh-a86"/>
+                            <constraint firstItem="rv6-Qm-Y9l" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="hDY-Iw-Vvg"/>
+                            <constraint firstItem="ybK-AJ-mU5" firstAttribute="top" secondItem="Sgy-Z6-siQ" secondAttribute="bottom" id="hjS-nw-Adz"/>
+                            <constraint firstItem="GXR-FW-Kss" firstAttribute="top" secondItem="i08-kW-jhb" secondAttribute="bottom" id="hxh-xC-WYN"/>
+                            <constraint firstItem="O16-ZA-dXl" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="irz-8m-YeJ"/>
+                            <constraint firstItem="OPm-oX-yrg" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="iz9-X2-Pev"/>
+                            <constraint firstItem="rv6-Qm-Y9l" firstAttribute="leading" secondItem="5nU-ZH-Thm" secondAttribute="trailing" id="jK9-vY-35m"/>
+                            <constraint firstItem="6dP-lS-EyF" firstAttribute="top" secondItem="m3H-ue-01m" secondAttribute="bottom" id="jvA-xc-0MZ"/>
+                            <constraint firstItem="Sgy-Z6-siQ" firstAttribute="top" secondItem="gQX-9K-khK" secondAttribute="bottom" id="kTa-5C-Iui"/>
+                            <constraint firstAttribute="trailing" secondItem="lWo-Sb-5Om" secondAttribute="trailing" id="mGq-3g-Feu"/>
+                            <constraint firstItem="lWo-Sb-5Om" firstAttribute="top" secondItem="BQd-ZP-fXm" secondAttribute="bottom" id="maD-sG-Z0A"/>
+                            <constraint firstItem="i08-kW-jhb" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="mad-XJ-PG7"/>
+                            <constraint firstItem="OPm-oX-yrg" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="muc-e5-HPd"/>
+                            <constraint firstItem="2Hf-88-ane" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="oFZ-js-KBu"/>
+                            <constraint firstItem="m3H-ue-01m" firstAttribute="top" secondItem="G22-nV-7nb" secondAttribute="bottom" id="oI0-oO-fLc"/>
+                            <constraint firstItem="rv6-Qm-Y9l" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="oNn-Qt-CeJ"/>
+                            <constraint firstItem="2Hf-88-ane" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="ob7-YI-xKd"/>
+                            <constraint firstItem="lWo-Sb-5Om" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="oyd-oM-gcw"/>
+                            <constraint firstItem="gQX-9K-khK" firstAttribute="leading" secondItem="UtP-ea-oiN" secondAttribute="trailing" id="ozf-bZ-RCV"/>
+                            <constraint firstItem="7FX-VJ-rvY" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="q0F-js-cfY"/>
+                            <constraint firstItem="O16-ZA-dXl" firstAttribute="leading" secondItem="GXR-FW-Kss" secondAttribute="trailing" id="s01-Yp-mfL"/>
+                            <constraint firstItem="G22-nV-7nb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="148" id="t1X-vo-1eL"/>
+                            <constraint firstItem="BQd-ZP-fXm" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="tVY-RX-CYO"/>
+                            <constraint firstItem="OPm-oX-yrg" firstAttribute="top" secondItem="2Hf-88-ane" secondAttribute="bottom" id="wWZ-Vf-waT"/>
+                            <constraint firstItem="m3H-ue-01m" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="wv8-v7-Ahv"/>
+                            <constraint firstItem="gQX-9K-khK" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="x31-AW-Vno"/>
+                            <constraint firstItem="7FX-VJ-rvY" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="yLq-li-zkF"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="Wbk-d3-hKz" id="rtM-dW-L5T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="301"/>
+        </scene>
+    </scenes>
+</document>
