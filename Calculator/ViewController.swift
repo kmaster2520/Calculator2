@@ -12,11 +12,12 @@ class ViewController: UIViewController {
     
     @IBAction func clearButtonPressed(sender: UIButton) {
         calculations.clearQuery()
-        resultLabel.text = calculations.getQuery()
+        resultLabel.text = "0"
     }
     
     @IBAction func delButtonPressed(sender: UIButton) {
-        //TODO
+        calculations.unAppendQuery()
+        resultLabel.text = calculations.getQuery()
     }
     
     @IBAction func opButtonPressed(sender: UIButton) {

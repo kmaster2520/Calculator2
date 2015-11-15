@@ -11,6 +11,7 @@ import Foundation
 protocol OperationDelegate {
     func getQuery() -> String
     func appendQuery(s: String)
+    func unAppendQuery()
     func clearQuery()
     func getListFromInput() -> [String]
     func toPostFix(query: [String]) -> [String]

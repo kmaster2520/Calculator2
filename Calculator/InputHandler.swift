@@ -32,6 +32,10 @@ class InputHandler: OperationDelegate {
         query += s
     }
     
+    func unAppendQuery() {
+        query = String(query.characters.dropLast())
+    }
+    
     func clearQuery() {
         query = ""
     }
