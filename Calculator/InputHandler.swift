@@ -44,6 +44,7 @@ class InputHandler: OperationDelegate {
         var ls: [String] = ["$"]
         var parens: Int = 0
         //
+        //print(query)
         for ch in query.characters {
             if ch == "*" || ch == "/" || ch == "^" {
                 // as operator
@@ -56,7 +57,7 @@ class InputHandler: OperationDelegate {
                     ls.append(String(ch) + "0")
                 }
                 // as operator
-                if isOperand(ls.last) || ls.last == ")" || ls.last == "$" {
+                else if isOperand(ls.last) || ls.last == ")" || ls.last == "$" {
                     ls.append(String(ch))
                 }
             } else if isOperand(String(ch)) {
@@ -80,8 +81,12 @@ class InputHandler: OperationDelegate {
                 } else {
                     parens -= 1
                 }
-                if isOperator(ls.last) || ls.last == "(" {
+                if isOperator(ls.last) {
                     ls.removeLast()
+                }
+                if ls.last == "(" {
+                    ls.removeLast()
+                    continue
                 }
                 ls.append(String(ch))
             }
@@ -156,6 +161,7 @@ class InputHandler: OperationDelegate {
             postfix.append(opStack.removeLast())
         }
         
+        //print(postfix)
         return postfix
     }
     
@@ -177,7 +183,6 @@ class InputHandler: OperationDelegate {
     
     func returnValue() -> Double {
         let root: TreeNode = toBXT(toPostFix(getListFromInput()))
-        //print(toPostFix(getListFromInput()))
         return root.eval()
     }
 }

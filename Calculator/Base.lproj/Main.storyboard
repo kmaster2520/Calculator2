@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -19,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbk-d3-hKz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbk-d3-hKz">
                                 <rect key="frame" x="0.0" y="79" width="320" height="90"/>
                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="42"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -340,6 +341,7 @@
                             <constraint firstItem="O16-ZA-dXl" firstAttribute="leading" secondItem="GXR-FW-Kss" secondAttribute="trailing" id="s01-Yp-mfL"/>
                             <constraint firstItem="G22-nV-7nb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="148" id="t1X-vo-1eL"/>
                             <constraint firstItem="BQd-ZP-fXm" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="tVY-RX-CYO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wbk-d3-hKz" secondAttribute="trailing" constant="-10" id="wDO-dy-5mW"/>
                             <constraint firstItem="OPm-oX-yrg" firstAttribute="top" secondItem="2Hf-88-ane" secondAttribute="bottom" id="wWZ-Vf-waT"/>
                             <constraint firstItem="m3H-ue-01m" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="wv8-v7-Ahv"/>
                             <constraint firstItem="gQX-9K-khK" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="x31-AW-Vno"/>
