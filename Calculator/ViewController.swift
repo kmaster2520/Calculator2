@@ -27,8 +27,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func equalsButtonPressed(sender: UIButton) {
-        resultLabel.text = String(calculations.returnValue())
+        var result = String(format:"%12.10f", calculations.returnValue())
+        //print(result)
+        resultLabel.text = trim0(result)
         calculations.clearQuery()
+    }
+    
+    func trim0(result: String) -> String {
+        var res = String(result)
+        while !res.characters.isEmpty && res.characters.last! == "0" {
+            res = String(res.characters.dropLast())
+        }
+        if !res.characters.isEmpty && res.characters.last! == "." {
+            res = String(res.characters.dropLast())
+        }
+        return res
     }
     
 }
