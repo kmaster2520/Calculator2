@@ -10,11 +10,11 @@ import Foundation
 
 protocol OperationDelegate {
     func getQuery() -> String
-    func appendQuery(s: String)
+    func appendQuery(_ s: String)
     func unAppendQuery()
     func clearQuery()
     func getListFromInput() -> [String]
-    func toPostFix(query: [String]) -> [String]
-    func toBXT(query: [String]) -> TreeNode
+    func toPostFix(_ query: [String]) -> [String]
+    func toBXT(_ query: [String]) -> TreeNode
     func returnValue() -> Double
 }

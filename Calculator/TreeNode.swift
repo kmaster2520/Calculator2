@@ -23,11 +23,11 @@ class TreeNode {
         self.init(value: value, left: nil, right: nil)
     }
     
-    func setLeft(newLeft: TreeNode) {
+    func setLeft(_ newLeft: TreeNode) {
         self.left = newLeft
     }
     
-    func setRight(newRight: TreeNode) {
+    func setRight(_ newRight: TreeNode) {
         self.right = newRight
     }
     

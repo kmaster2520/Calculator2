@@ -7,6 +7,30 @@
 //
 
 import Foundation
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l >= r
+  default:
+    return !(lhs < rhs)
+  }
+}
+
 
 extension Character {
     var val: UInt32 {
@@ -28,7 +52,7 @@ class InputHandler: OperationDelegate {
         return query + ""
     }
     
-    func appendQuery(s: String) {
+    func appendQuery(_ s: String) {
         query += s
     }
     
@@ -113,7 +137,7 @@ class InputHandler: OperationDelegate {
         return ls
     }
     
-    func isOperand(ch: String?) -> Bool {
+    func isOperand(_ ch: String?) -> Bool {
         if ch == nil {
             return false
         }
@@ -123,14 +147,14 @@ class InputHandler: OperationDelegate {
         return false
     }
     
-    func isOperator(ch: String?) -> Bool {
+    func isOperator(_ ch: String?) -> Bool {
         if ch == nil {
             return false
         }
         return ch == "*" || ch == "/" || ch == "+" || ch == "-" || ch == "^"
     }
 
-    func toPostFix(query: [String]) -> [String] {
+    func toPostFix(_ query: [String]) -> [String] {
         var opStack: [String] = []
         var postfix: [String] = []
         
@@ -165,7 +189,7 @@ class InputHandler: OperationDelegate {
         return postfix
     }
     
-    func toBXT(query: [String]) -> TreeNode {
+    func toBXT(_ query: [String]) -> TreeNode {
         if query.isEmpty {
             return TreeNode(value: "0")
         }

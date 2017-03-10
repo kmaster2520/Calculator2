@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,8 +24,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbk-d3-hKz">
-                                <rect key="frame" x="0.0" y="79" width="320" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbk-d3-hKz">
+                                <rect key="frame" x="0.0" y="79" width="314" height="90"/>
                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="42"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,13 +33,13 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXR-FW-Kss">
                                 <rect key="frame" x="0.0" y="488" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="GXR-FW-Kss" secondAttribute="height" multiplier="1:1" id="KqQ-kS-hmk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="clr">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N5F-7m-cv3"/>
@@ -43,10 +47,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWo-Sb-5Om">
                                 <rect key="frame" x="240" y="488" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="=">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="equalsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5D-4v-mM8"/>
@@ -54,10 +58,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQd-ZP-fXm">
                                 <rect key="frame" x="240" y="408" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="/">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctc-Fc-4Aa"/>
@@ -65,10 +69,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i08-kW-jhb">
                                 <rect key="frame" x="0.0" y="408" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.00011086463928222656" green="0.0017602443695068359" blue="0.99821841716766357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="1">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tuu-h1-3Nm"/>
@@ -76,10 +80,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rv6-Qm-Y9l">
                                 <rect key="frame" x="160" y="408" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.00011086463928222656" green="0.0017602443695068359" blue="0.99821841716766357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="3">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSK-ev-Wyg"/>
@@ -87,10 +91,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybK-AJ-mU5">
                                 <rect key="frame" x="240" y="328" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="*">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F0X-IS-ccc"/>
@@ -98,10 +102,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nU-ZH-Thm">
                                 <rect key="frame" x="80" y="408" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.00011086463928222656" green="0.0017602443695068359" blue="0.99821841716766357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="2">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ON2-kZ-w5e"/>
@@ -109,10 +113,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPm-oX-yrg">
                                 <rect key="frame" x="0.0" y="328" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.00011086463928222656" green="0.0017602443695068359" blue="0.99821841716766357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="4">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNg-JH-IqD"/>
@@ -120,10 +124,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eB8-Rz-61S">
                                 <rect key="frame" x="160" y="328" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.00011086463928222656" green="0.0017602443695068359" blue="0.99821841716766357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="6">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIa-kO-J4s"/>
@@ -131,10 +135,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-Z6-siQ">
                                 <rect key="frame" x="240" y="248" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="-">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KgN-yd-8ex"/>
@@ -142,10 +146,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hf-88-ane">
                                 <rect key="frame" x="0.0" y="248" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.00011086463928222656" green="0.0017602443695068359" blue="0.99821841716766357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="7">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwx-oM-7zw"/>
@@ -153,10 +157,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-jA-HCN">
                                 <rect key="frame" x="160" y="248" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.00011086463928222656" green="0.0017602443695068359" blue="0.99821841716766357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="9">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vBU-W2-6lI"/>
@@ -164,10 +168,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3H-ue-01m">
                                 <rect key="frame" x="80" y="248" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.00011086463928222656" green="0.0017602443695068359" blue="0.99821841716766357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="8">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3XE-nU-kfq"/>
@@ -175,10 +179,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQX-9K-khK">
                                 <rect key="frame" x="240" y="168" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="+">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMs-LH-qpK"/>
@@ -186,10 +190,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G22-nV-7nb">
                                 <rect key="frame" x="80" y="168" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title=")">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXM-RQ-Thc"/>
@@ -197,10 +201,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r71-e4-gVz">
                                 <rect key="frame" x="0.0" y="168" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="(">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCr-L3-XPe"/>
@@ -208,10 +212,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FX-VJ-rvY">
                                 <rect key="frame" x="160" y="488" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.00011086463928222656" green="0.0017602443695068359" blue="0.99821841716766357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="0">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dvH-jv-Dkc"/>
@@ -219,10 +223,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O16-ZA-dXl">
                                 <rect key="frame" x="80" y="488" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="del">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="delButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eGi-b2-yj9"/>
@@ -230,10 +234,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dP-lS-EyF">
                                 <rect key="frame" x="80" y="328" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835096599999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.00011086463928222656" green="0.0017602443695068359" blue="0.99821841716766357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="5">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5VI-ab-5jl"/>
@@ -241,17 +245,17 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtP-ea-oiN">
                                 <rect key="frame" x="160" y="168" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                 <state key="normal" title="^">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="opButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQx-9K-8Aa"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2Hf-88-ane" firstAttribute="top" secondItem="r71-e4-gVz" secondAttribute="bottom" id="0g6-ID-iJT"/>
                             <constraint firstItem="BQd-ZP-fXm" firstAttribute="leading" secondItem="rv6-Qm-Y9l" secondAttribute="trailing" id="1DN-ZQ-hCI"/>
@@ -266,6 +270,7 @@
                             <constraint firstItem="Sgy-Z6-siQ" firstAttribute="leading" secondItem="Nax-jA-HCN" secondAttribute="trailing" id="7mh-Qb-nr1"/>
                             <constraint firstItem="UtP-ea-oiN" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="7u0-Eo-Lmh"/>
                             <constraint firstItem="G22-nV-7nb" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="B1c-EK-l7c"/>
+                            <constraint firstItem="Wbk-d3-hKz" firstAttribute="leading" secondItem="r71-e4-gVz" secondAttribute="leading" id="BsA-ss-KdB"/>
                             <constraint firstItem="Nax-jA-HCN" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="CYL-H2-XyJ"/>
                             <constraint firstItem="gQX-9K-khK" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="D8x-ZP-fF1"/>
                             <constraint firstItem="6dP-lS-EyF" firstAttribute="leading" secondItem="OPm-oX-yrg" secondAttribute="trailing" id="DPC-Mu-r5S"/>
@@ -288,6 +293,7 @@
                             <constraint firstItem="ybK-AJ-mU5" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="LPa-1s-Avn"/>
                             <constraint firstItem="Nax-jA-HCN" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="LiQ-JC-7K4"/>
                             <constraint firstItem="5nU-ZH-Thm" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="MJI-Bt-gFP"/>
+                            <constraint firstItem="m3H-ue-01m" firstAttribute="top" secondItem="Wbk-d3-hKz" secondAttribute="bottom" constant="79" id="MzF-dX-Jpm"/>
                             <constraint firstItem="GXR-FW-Kss" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="NLv-Mn-xe7"/>
                             <constraint firstItem="Nax-jA-HCN" firstAttribute="top" secondItem="UtP-ea-oiN" secondAttribute="bottom" id="OZa-ye-p3q"/>
                             <constraint firstItem="6dP-lS-EyF" firstAttribute="width" secondItem="r71-e4-gVz" secondAttribute="width" id="P6B-dY-lkU"/>
@@ -327,6 +333,7 @@
                             <constraint firstItem="rv6-Qm-Y9l" firstAttribute="leading" secondItem="5nU-ZH-Thm" secondAttribute="trailing" id="jK9-vY-35m"/>
                             <constraint firstItem="6dP-lS-EyF" firstAttribute="top" secondItem="m3H-ue-01m" secondAttribute="bottom" id="jvA-xc-0MZ"/>
                             <constraint firstItem="Sgy-Z6-siQ" firstAttribute="top" secondItem="gQX-9K-khK" secondAttribute="bottom" id="kTa-5C-Iui"/>
+                            <constraint firstItem="Wbk-d3-hKz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="lG3-7k-9iB"/>
                             <constraint firstAttribute="trailing" secondItem="lWo-Sb-5Om" secondAttribute="trailing" id="mGq-3g-Feu"/>
                             <constraint firstItem="lWo-Sb-5Om" firstAttribute="top" secondItem="BQd-ZP-fXm" secondAttribute="bottom" id="maD-sG-Z0A"/>
                             <constraint firstItem="i08-kW-jhb" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="mad-XJ-PG7"/>
@@ -348,7 +355,6 @@
                             <constraint firstItem="7FX-VJ-rvY" firstAttribute="height" secondItem="r71-e4-gVz" secondAttribute="height" id="yLq-li-zkF"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="resultLabel" destination="Wbk-d3-hKz" id="rtM-dW-L5T"/>
                     </connections>
