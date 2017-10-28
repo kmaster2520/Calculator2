@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     @IBAction func delButtonPressed(_ sender: UIButton) {
         calculations.unAppendQuery()
         resultLabel.text = calculations.getQuery()
+        if resultLabel.text == "" {
+            resultLabel.text = "0"
+        }
     }
     
     @IBAction func opButtonPressed(_ sender: UIButton) {
